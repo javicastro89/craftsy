@@ -87,3 +87,53 @@
     width: 90%;
     margin-bottom: 10px;
 }
+
+@media (min-width: 481px) {
+    .home .imageProduct {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .home article h4 {
+        align-self: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .home .products {
+        width: 65%;
+    }
+
+    .home aside article {
+        width: 100%;
+        
+    }
+
+    .home aside p {
+        margin-left: 10px;
+    }
+
+    .home aside .publicidad img {
+        width: 100%;
+    }
+
+    .home aside {
+        width: 30%;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 1140px) {
+    .home .products {
+        width: 800px;
+    }
+
+    .home aside {
+        width: 320px;
+    }
+
+    .home main {
+        justify-content: space-between;
+    }
+}

@@ -1,7 +1,5 @@
-body {
-    max-width: 1140px;
-}
-
-li  {
-    list-style: none;
-}
+@import url('./header.css');
+@import url('./home.css');
+@import url('./login.css');
+@import url('./register.css');
+@import url('./general.css');

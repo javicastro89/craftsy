@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -21,43 +22,43 @@
                 <li><a href="">Computadoras</a></li>
             </ul>
             <ul>
-                <li><a href="">Login</a></li>
-                <li><a href="">Registro</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Registro</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="register">
 
         <h1>Bienvenido</h1>
 
-        <form action="">
+        <form action="" >
 
-            <div>
+            <div class='input'>
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre">
                 <small>Obligatorio</small>
             </div>
 
-            <div>
+            <div class='input'>
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Email">
                 <small>Obligatorio</small>
             </div>
 
-            <div>
+            <div class='input'>
                 <label for="password1">Contraseña</label>
                 <input type="password" name="password" id="password1" placeholder="Contraseña">
                 <small>Obligatorio</small>
             </div>
             
-            <div>
+            <div class='input'>
                 <label for="password2">Confirmar contraseña</label>
                 <input type="password" name="password" id="password2" placeholder="Repetir contraseña">
                 <small>Obligatorio</small>
             </div>
 
-            <div>
+            <div class='input'>
                 <h4>Pais de nacimiento</h4>
                 <select name="pais" id="pais">
                     <option value="" selected hidden>Seleccione su país</option>
@@ -70,44 +71,73 @@
                 <small>Obligatorio</small>
             </div>
 
-            <div>
+            <div class='input'>
                 <h4>Género</h4>
-                <input type="radio" name="genero" id="m" value="m">
+                <div class="check">
+
+                <div>
+                <input class='box' type="radio" name="genero" id="m" value="m">
                 <label for="m">Masculino</label>
+                </div>
 
-                <input type="radio" name="genero" id="f" value="f">
+                <div>
+                <input class='box' type="radio" name="genero" id="f" value="f">
                 <label for="f">Femenino</label>
+                </div>
 
-                <input type="radio" name="genero" id="p" value="p">
+                <div>
+                <input class='box' type="radio" name="genero" id="p" value="p">
                 <label for="p">Prefiero no decirlo</label>
+                </div>
+
+                </div>
             </div>
 
-            <div>
+            <div class='input'>
                 <h4>Hobbies</h4>
-                <input type="checkbox" name="1" id="1">
+                <div class="check">
+
+                <div>
+                <input class='box' type="checkbox" name="1" id="1">
                 <label for="1">checkbox</label>
+                </div>
 
-                <input type="checkbox" name="2" id="2">
+                <div>
+                <input class='box' type="checkbox" name="2" id="2">
                 <label for="2">checkbox</label>
+                </div>
 
-                <input type="checkbox" name="3" id="3">
+                <div>
+                <input class='box' type="checkbox" name="3" id="3">
                 <label for="3">checkbox</label>
+                </div>
 
-                <input type="checkbox" name="4" id="4">
+                <div>
+                <input class='box' type="checkbox" name="4" id="4">
                 <label for="4">checkbox</label>
+                </div>
+
+                </div>
             </div>
 
-            <div>
+            <div class='input'>
                 <h4>Dejanos tu comentario</h4>
                 <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Comentarios..."></textarea>
             </div>
 
-            <div>
+            <div class='terminos'>
                 <input type="checkbox" name="terminos" id="terminos">
                 <label for="terminos">Terminos y condiciones</label>
             </div>
 
-            <div>
+            <div class="inputBttn">
+
+                <input type="submit" value="Registrarme"/>
+                <input type="reset" value="Cancelar"/>
+
+            </div>
+
+            <div class="bttn">
 
                 <button type="submit">Registrarme</button>
                 <button type="reset">Cancelar</button>
